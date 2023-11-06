@@ -2,39 +2,39 @@ const container = document.querySelector(".container");
 const coffees = [
   {
     name: "01 A Lovely Night",
-    image: "images/testpdf.pdf"
+    image: "images/test.png"
   },
   {
     name: "02 Test PDF",
-    image: "images/testpdf.pdf"
+    image: "images/test.png"
   },
   {
-    name: "Explicabo",
-    image: "images/testpdf.pdf"
+    name: "03 Test PDF",
+    image: "images/test.png"
   },
   {
-    name: "Rchitecto",
-    image: "images/testpdf.pdf"
+    name: "04 Test PDF",
+    image: "images/test.png"
   },
   {
-    name: " Beatae",
-    image: "images/testpdf.pdf"
+    name: "05 Test PDF",
+    image: "images/test.png"
   },
   {
-    name: " Vitae",
-    image: "images/testpdf.pdf"
+    name: "06 Test PDF",
+    image: "images/test.png"
   },
   {
-    name: "Inventore",
-    image: "images/testpdf.pdf"
+    name: "07 Test PDF",
+    image: "images/test.png"
   },
   {
-    name: "Veritatis",
-    image: "images/testpdf.pdf"
+    name: "08 Test PDF",
+    image: "images/test.png"
   },
   {
-    name: "Accusantium",
-    image: "images/testpdf.pdf"
+    name: "09 Test PDF",
+    image: "images/test.png"
   }
 ];
 const showCoffees = () => {
@@ -43,8 +43,9 @@ const showCoffees = () => {
     ({ name, image }) =>
       (output += `
               <div class="card">
+              <img class="card--avatar" src=${image} />
 
-              <embed src=${image} class="card--avatar" />
+
                 <h1 class="card--title">${name}</h1>
                 <a class="card--link" href="#">Play</a>
               </div>

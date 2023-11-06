@@ -49,8 +49,8 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 15rem auto;
-  height: 15rem;
+  width: 100%;
+  height: fit-content;
   background: #fff;
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
   border: solid lightgray 1px;
@@ -60,9 +60,8 @@ h1 {
 }
 
 .card--avatar {
-  width: 100%;
+  width: auto;
   height: 10rem;
-  object-fit: cover;
 }
 
 .card--title {
